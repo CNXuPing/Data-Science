@@ -10,7 +10,7 @@ ds=pd.read_csv('D:/JupyterProject/DT/dataset.csv') # dataset
 ds.head()
 
 ds['Result']=ds['Result'].map({'Y':1,'N':0})
-header=['Age','Income','LoanAmount'] # NMissing Value Imputation
+header=['Age','Income','LoanAmount'] # Missing Value Imputation
 
 ds = ds.fillna(value=ds[header].mean())
 
